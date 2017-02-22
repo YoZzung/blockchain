@@ -1,0 +1,188 @@
+{% extends "home2.html" %} {% block body %}
+
+<div class="container" id="asset_contents">
+    <div class="jumbotron">
+        <h4>Help You!</h4>
+        <h7>기존에 등록된 집, 강아지 정보입니다. 새로 등록을 원하시면 버튼을 눌러주세요.</h7>
+        <ul class="nav navbar-nav navbar-right">
+            <a class="btn btn-info" href="newhouse" role="button">집 등록하기</a>
+            <a class="btn btn-info" href="newpet" role="button">펫 등록하기</a>
+        </ul>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-6 col-md-4">
+
+            <div class="thumbnail">
+                <img src="{{ url_for('static', filename= 'img/thumbnail/home.png') }}" alt="...">
+                <div class="caption">
+                    <!-- <center><h3>Home</h3></center> -->
+                    <h3>도곡삼성래미안</h3>
+                    <p>
+                        <table border="0" style="width: 100%;">
+                            <col width="auto">
+                            <col width="auto">
+                            <tr class="border_bottom">
+                                <td>이름</td>
+                                <td>도곡삼성래미안</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>방 종류</td>
+                                <td>쓰리룸</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>해당 층</td>
+                                <td>2층</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>건물 층</td>
+                                <td>6층</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>공급</td>
+                                <td>145.2m^2</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>전용면적</td>
+                                <td>72.6m^2</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>난방종류</td>
+                                <td>개별 난방</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>엘리베이터</td>
+                                <td>없음</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>주차</td>
+                                <td>가능</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>반려동물</td>
+                                <th>가능</th>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>
+                        <a class="btn btn-info" href="#" role="button">Pet Sitter</a>
+                        <a class="btn btn-info" href="#" role="button">수정</a>
+                        <a class="btn btn-info" href="#" role="button">삭제</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="{{ url_for('static', filename= 'img/thumbnail/home2.png') }}" alt="...">
+                <div class="caption">
+                    <!-- <center><h3>Home</h3></center> -->
+                    <h3>성원빌라</h3>
+                    <p>
+                        <table border="0" style="width: 100%;">
+                            <col width="auto">
+                            <col width="auto">
+                            <tr class="border_bottom">
+                                <td>이름</td>
+                                <td>성원빌라</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>방 종류</td>
+                                <td>원룸</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>해당 층</td>
+                                <td>28층</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>건물 층</td>
+                                <td>30층</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>공급</td>
+                                <td>300.2m^2</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>전용면적</td>
+                                <td>244.6m^2</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>난방종류</td>
+                                <td>개별 난방</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>엘리베이터</td>
+                                <td>있음</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>주차</td>
+                                <td>가능</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>반려동물</td>
+                                <th>불가능</th>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>
+                        <a class="btn btn-default" href="#" role="button">Pet Sitter</a>
+                        <a class="btn btn-info" href="#" role="button">수정</a>
+                        <a class="btn btn-info" href="#" role="button">삭제</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="{{ url_for('static', filename= 'img/thumbnail/dog.png') }}" alt="...">
+                <div class="caption">
+                    <h3>호이</h3>
+                    <p>
+                        <table border="0" style="width: 100%;">
+                            <col width="auto">
+                            <col width="auto">
+                            <tr class="border_bottom">
+                                <td>이름</td>
+                                <td>호이</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>나이</td>
+                                <td>4세</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>성별</td>
+                                <td>남자</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>종류</td>
+                                <td>치와와</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>크기</td>
+                                <td>2Kg 미만</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>중성화수술</td>
+                                <td>No</td>
+                            </tr>
+
+
+                        </table>
+                    </p>
+
+
+                    <p>
+                        <a class="btn btn-info" href="#" role="button">Pet Sitting</a>
+                        <a class="btn btn-info" href="#" role="button">수정</a>
+                        <a class="btn btn-info" href="#" role="button">삭제</a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

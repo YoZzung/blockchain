@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% block content %}
+
+<!-- Static navbar -->
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+            <a class="navbar-brand" href="http://127.0.0.1:5000/main">PetSit</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li onclick="onClicked(this)" id="home" class="active"><a href="main">Home</a></li>
+                <li onclick="onClicked(this)" id="contact"><a href="contact">Contact</a></li>
+                <li><a href="about" class="btn_help">Information</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <!-- <li><a href="../navbar/" class="btn_help">도움말</a></li> -->
+                <!-- <li class="active"><a href="./">회원가입</a></li> -->
+                <li><a href="join" class="btn_join">Sign Up</a></li>
+                <li><a href="login" class="btn_log">Log In</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" disabled>Become family<b class="caret"></b></a>
+                    <!-- <ul class="dropdown-menu">
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Profile</li>
+                <li><a href="#">My Hosts</a></li>
+                <li><a href="#">Log Out</a></li>
+              </ul> -->
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+<hr> {% block body %}{% endblock %}
+<!-- /.container -->
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "home.html" %} {% block body %}
+
+<div class="container">
+    <div class="login">
+        <div class="login-screen">
+            <div class="login-icon">
+                <img src="{{ url_for('static', filename= 'img/login/icon.png') }}" />
+                <!-- alt="Welcome to Mail App"  -->
+                <h4>Welcome to <small>PetSitting</small></h4>
+            </div>
+            {% if error %}
+            <p class=error><strong>Error:</strong> {{ error }}{% endif %}
+
+                <form action="{{ url_for('login') }}" method=post>
+
+                    <div class="login-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control login-field" value="" placeholder="Enter your e-mail" id="login-name" name="email" />
+                            <label class="login-field-icon fui-user" for="login-name"></label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass" name="password" />
+                            <label class="login-field-icon fui-lock" for="login-pass"></label>
+                        </div>
+
+                        <input type="submit" class="btn btn-primary btn-lg btn-block" id="login" value="Log in" />
+                </form>
+
+                <a class="login-link" href="#">Lost your password?</a>
+                </div>
+        </div>
+    </div>
+    <!-- post 했던 email pw 출력해보기-->
+    <!-- <p> email: <span id="e_mail"></span></p>
+      <p> password: <span id="pw"></span></p> -->
+</div>
+{% endblock %}

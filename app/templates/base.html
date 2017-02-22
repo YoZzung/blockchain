@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    {% if title %}
+    <title>{{ title }} - PetSit</title>
+    {% else %}
+    <title>Welcome to petsit</title>
+    {% endif %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- hyojung css  -->
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/style.css') }}" >
+
+    <!-- Loading Bootstrap -->
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/vendor/bootstrap/css/bootstrap.min.css') }}" >
+
+    <!-- Loading Flat UI -->
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename= 'css/flat-ui.min.css') }}" >
+
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename= 'docs/assets/css/demo.css') }}" >
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script type=text/javascript src="{{ url_for('static', filename='js/vendor/jquery.min.js') }}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type=text/javascript src="{{ url_for('static', filename='js/vendor/video.js') }} "></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/flat-ui.min.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/new.js') }}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  </head>
+  <body>
+    <style>
+      body {
+        min-height: 2000px;
+      }
+      .navbar-static-top {
+        margin-bottom: 19px;
+      }
+    </style>
+
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>

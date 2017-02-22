@@ -1,0 +1,29 @@
+{% extends "home.html" %}
+{% block body %}
+    <div class="container">
+      <div class="jumbotron">
+      <h3>펫시터를 찾아보세요!</h3>
+      </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <form class="form-inline" role="form" action="{{ url_for('main') }}" method="post">
+          <div class="form-group">
+            <label class="sr-only" for=""></label>
+            <input type="text" class="form-control" id="searchInputArea" placeholder="Enter Area">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for=""></label>
+            <input type="text" class="form-control" id="searchInputStart" placeholder="Start date">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for=""></label>
+            <input type="text" class="form-control" id="searchInputEnd" placeholder="End date">
+          </div>
+          <input type="submit" class="btn btn-info" id="search" value="Search" />
+        </form>
+        
+      </div><!-- /.col-md-12 -->
+    </div><!-- /.row -->
+    </div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "home.html" %} {% block body %}
+
+<div class="container">
+    <div class="jumbotron">
+        <h3>시작해봐요!</h3>
+        <h7>간단한 절차를 통해 저희의 가족이 되어주세요.<br></h7>
+
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-horizontal" role="form" action="" method="post" name="join">
+
+                    <div class="form-group">
+                        <label for="inputEmail1" class="col-lg-2 control-label">이메일</label>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control" id="inputEmail1" placeholder="Email" name="email">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword1" class="col-lg-2 control-label">비밀번호</label>
+                        <div class="col-lg-10">
+                            <input type="password" class="form-control" id="inputPassword1" placeholder="Password" name="password">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-10">
+                            <label class="checkbox" for="checkbox3">
+                              <input type="checkbox" data-toggle="checkbox" value="" id="checkbox3" >
+                              Remember me
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-10">
+                            <input type="submit" class="btn btn-default" value="Sign up">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <!-- /.col-md-12 -->
+        </div>
+        <!-- /.row -->
+
+    </div>
+</div>
+<!-- /.container -->
+{% endblock %}
