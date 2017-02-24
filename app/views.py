@@ -65,6 +65,14 @@ def newpet():
         return redirect('/asset')
     return render_template("newpet.html")
 
+@app.route('/viewsitter', methods=['GET', 'POST'])
+def viewsitter():
+    return render_template("viewsitter.html")
+
+@app.route('/viewsitter2', methods=['GET', 'POST'])
+def viewsitter2():
+    return render_template("viewsitter2.html")
+
 
 
 @app.route('/search', methods=['GET', 'POST'])

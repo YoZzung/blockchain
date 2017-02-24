@@ -1,14 +1,144 @@
 {% extends "home2.html" %} {% block body %}
 
 <div class="container">
-    <h4>House!</h4>
-    <p>새로 등록하실 집에 대한 간단한 설문입니다.</p>
-    <div class="form-group form-group-lg">
-        <label class="col-sm-2 control-label" for="formGroupInputLarge">주소</label>
-        <div class="col-sm-10">
-            <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Address">
-        </div>
+    <div class="jumbotron">
+        <h4>House!</h4>
+        <h7>새로 등록하실 집에 대한 간단한 설문입니다.</h7>
     </div>
+
+    <form  role="form" action="" method="post" name="newhouse">
+        <!-- 주소 입력 -->
+        <div class="row">
+            <div class="col-md-12">
+        <div class="form-group form-group-lg">
+            <label class="col-sm-2 control-label" for="formGroupInputLarge">주소</label>
+            <div class="col-sm-10">
+                <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Address">
+            </div>
+        </div>
+      </div>
+  </div>
+
+        <!-- 집유형 선택  -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <form class="form-horizontal" role="form"> -->
+                <div class="form-group form-group-lg">
+                    <label for="" class="col-lg-2 control-label">유형</label>
+                    <div class="col-lg-10">
+                        <form action="#" type="get">
+                            <select data-toggle="select" class="form-control select select-default mrs mbm">
+                              <option value="0">아파트</option>
+                              <option value="1">빌라</option>
+                              <option value="2">개인 주택</option>
+                              <option value="3">다세대 주택</option>
+                            </select>
+                            <!-- <input type="submit" value="Submit" class="btn"> -->
+                        </form>
+                    </div>
+                </div>
+                <!-- </form> -->
+            </div>
+            <!-- /.col-md-12 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <form class="form-horizontal" role="form"> -->
+                <div class="form-group form-group-lg">
+                    <label for="" class="col-lg-2 control-label">방 갯수</label>
+                    <div class="col-lg-10">
+                        <form action="#" type="get">
+                            <select data-toggle="select" class="form-control select select-default mrs mbm">
+                              <option value="0">0개</option>
+                              <option value="1">1개</option>
+                              <option value="2">2개</option>
+                              <option value="3">3개</option>
+                              <option value="4">4개</option>
+                              <option value="5">5개</option>
+                              <option value="6">6개</option>
+                              <option value="7">7개</option>
+                              <option value="8">8개</option>
+                              <option value="9">9개</option>
+                              <option value="10">10개</option>
+                            </select>
+                            <!-- <input type="submit" value="Submit" class="btn"> -->
+                        </form>
+                    </div>
+                </div>
+                <!-- </form> -->
+            </div>
+            <!-- /.col-md-12 -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <form class="form-horizontal" role="form"> -->
+                <div class="form-group form-group-lg">
+                    <label for="" class="col-lg-2 control-label">평수</label>
+                    <div class="col-lg-10">
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Input Area">평
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- </form> -->
+            </div>
+            <!-- /.col-md-12 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <form class="form-horizontal" role="form"> -->
+                <div class="form-group form-group-lg">
+                    <label for="" class="col-lg-2 control-label">엘레베이터</label>
+                    <div class="col-lg-10">
+                        <form action="#" type="get">
+                            <select data-toggle="select" class="form-control select select-default mrs mbm">
+                              <option value="0">Y</option>
+                              <option value="1">N</option>
+                            </select>
+                            <!-- <input type="submit" value="Submit" class="btn"> -->
+                        </form>
+                    </div>
+                </div>
+                <!-- </form> -->
+            </div>
+            <!-- /.col-md-12 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <form class="form-horizontal" role="form"> -->
+                <div class="form-group form-group-lg">
+                    <label for="" class="col-lg-2 control-label">주차</label>
+                    <div class="col-lg-10">
+                        <form action="#" type="get">
+                            <select data-toggle="select" class="form-control select select-default mrs mbm">
+                              <option value="0">Y</option>
+                              <option value="1">N</option>
+                            </select>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- </form> -->
+            </div>
+            <!-- /.col-md-12 -->
+        </div>
+        <!-- /.row -->
+
+        <ul class="nav navbar-nav navbar-right">
+            <input type="submit" value="등록하기" class="btn btn-danger">
+        </ul>
+    </form>
+
+
 </div>
 
 {% endblock %}
